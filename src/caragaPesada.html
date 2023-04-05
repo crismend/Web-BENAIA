@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BENAIA</title>
+  <!-- google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- link styles -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./boxicons.css">
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- vavBar sticky-top fija el nav -->
+  <nav class="navbar navbar-expand-lg bg-light p-1 sticky-top">
+    <div class="container">
+      <a class=" navbar-brand" href="#">
+        <img src="../src/img/LOGO-BENAIA.png" alt="LOGOB ENAIA" class="img-logo">
+        <span class="company">INGENIERIA S.A.S</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#nosotros">Acerca de Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#servicios">Nuestros Servicios</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Equipos de Alquiler
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./maquinariaPesada.html"> <img class="iconoMaquinaria"
+                    src="./img/cavador.png"> Maquinaria pesada</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./maquinariaLiviana.html"> <img class="iconoMaquinaria"
+                    src="./img/cargador.png"> Maquinaria liviana</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./caragaPesada.html"> <img class="iconoMaquinaria"
+                    src="./img/camion-volquete.png"> Transporte de cargas y Tracto Camiones</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./vehiculos.html"> <img class="iconoMaquinaria"
+                    src="./img/camioneta.png"> Vehículos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#portafolio">Portafolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="container">
+    <div class="row">
+      <div class="col-12 intro text-center">
+        <h3>EQUIPOS DISPONIBLES</h3>
+      </div>
+
+      <article class="col-lg-4 col-sm-6 mb-4 tarjetas">
+        <div class="card tarjetas" style="width: 18rem;">
+          <img src="./img-vehiculos/camion-turbo.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Camion Turbo</h5>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-lg-4 col-sm-6 mb-3 tarjetas">
+        <div class="card tarjetas" style="width: 18rem;">
+          <img src="./img-vehiculos/camion-vacio.Jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Camion Vacio</h5>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-lg-4 col-sm-6 mb-3 tarjetas">
+        <div class="card tarjetas" style="width: 18rem;">
+          <img src="./img-vehiculos/tractomulas.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tractomulas</h5>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-lg-4 col-sm-6 mb-3 tarjetas">
+        <div class="card tarjetas" style="width: 18rem;">
+          <img src="./img-vehiculos/volqueta-dobleT.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Volquetas</h5>
+            <a href="#" class="btn btn-primary">Alquilar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-top text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h4 class="navbar-brand">BENAIA<span class="dot">.</span></h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+              classical Latin literature from</p>
+            <div class="col-auto social-icons">
+              <a href="#"><i class="iconoRed fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="iconoRed fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="iconoRed fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="mb-0">Copyright@2020. All rights Reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="container-fluid">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-sm-12 bg-cover" style="background-image: url(img/c2.jpg); min-height:300px;">
+                <div>
+
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <form class="p-lg-5 col-12 row g-3">
+                  <div>
+                    <h1>Get in touch</h1>
+                    <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="userName" class="form-label">First name</label>
+                    <input type="text" class="form-control" placeholder="Jon" id="userName"
+                      aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="userName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" placeholder="Doe" id="userName"
+                      aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-12">
+                    <label for="userName" class="form-label">Email address</label>
+                    <input type="email" class="form-control" placeholder="Johndoe@example.com" id="userName"
+                      aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-12">
+                    <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                    <textarea name="" placeholder="This is looking great and nice." class="form-control" id=""
+                      rows="4"></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-brand">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/527487c7ce.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 20,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 2,
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

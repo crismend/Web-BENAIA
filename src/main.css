@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand: #b27411;
+  --dark: #092032;
+  --body: #516171;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  
+}
+
+.iconoMaquinaria {
+  width: 2.3rem;
+  margin-right: 1rem;
+}
+
+/* header */
+.header {
+  background-image: linear-gradient(to right, #0b0b0bb7, #262a2597, #2e1106bb), url(./img/header2.jpg);
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  width: auto;
+  height: 80vh;
+  
+}
+.texto-header {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  text-align: center;
+  height: 75vh;
+}
+
+
+.img-logo {
+  width: 4rem;
+}
+.company {
+  color: brown;
+  font-weight: 450;
+
+  font-family: 'Roboto Slab', serif;
+}
+
+#benai {
+  font-family: 'Roboto Slab', serif;
+ font-weight:bolder;
+ font-size: 2.8em;
+  padding: 0.8rem;
+  box-shadow: 0 3px 0 rgba(9, 9, 9, 0.5) inset,
+    0 1px 3px rgba(236, 230, 230, 0.2);
+  color: transparent;
+	letter-spacing: -0.015em; 
+	background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb);
+   background-clip: text;
+   -webkit-background-clip: text;
+}
+
+#nivel{
+  font-size: 2rem ;
+  color: transparent;
+	letter-spacing: -0.015em; 
+	background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb);
+   background-clip: text;
+   -webkit-background-clip: text;
+}
+
+.parrafoHeader {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ede7cd;
+  font-weight:700;
+}
+
+.btn-header {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #62a3e0;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 5px 10px rgba(245, 237, 237, 0.5),inset
+  0 5px 5px rgba(25, 25, 24, 0.5); ;
+}
+
+.btn-header:hover {
+  transition: .0.3s ease-in-out;
+  background: #5ca3eb;
+}
+
+/* Quienes Somos */
+/* sections */
+section {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.introSomos h3 {
+  font-weight: 700;
+color: rgba(155, 34, 9, 0.85) ;
+}
+
+.introSomos p {
+max-width: 800px;
+margin: auto;
+}
+
+/* Ingenieria */
+.descripcionAbout {
+  width: 32rem;
+  display: flex; 
+  align-items: center;
+
+}
+.iconosAbout {
+  width: 4.5rem;
+  margin-right: 16px;
+}
+
+.imagenAbout{
+  width: 34rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* calificacion */
+#calificacion {
+  background: linear-gradient(rgba(190, 196, 12, 0.85), rgba(155, 34, 9, 0.85)), url(./img/silueta1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#calificacion .display-4,
+#calificacion p {
+  color: white;
+}
+#calificacion .display-4 {
+  font-weight: 500;
+}
+
+/* servicios */
+.intro {
+  margin-bottom: 40px ;
+}
+.intro h5 {
+  font-weight: 600;
+  color: rgba(155, 34, 9, 0.85) ;
+}
+.intro p {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+.servicioBox{
+  padding: 32px;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.servicioBox img{
+  width: 6rem;
+}
+
+.servicioBox h5 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* swiper */
+.project {
+  overflow: hidden;
+  position: relative;
+  color:white;
+  border-style: solid;
+  border-color: #49460c;
+  border-width: 1px;
+}
+
+.project .overlay {
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.project:hover .overlay {
+  background-image:linear-gradient(to bottom, rgba(92, 92, 22, 0.3), rgba(53, 27, 14, 0.8));
+  opacity:  1;
+  transform: translateY(0);
+}
+.project .h5 {
+  font-size: 1.8rem;
+}
+.project p {
+  font-size: 1.1rem;
+}
+
+/* equipo */
+.iconoRed{
+  font-size: 20px;
+}
+.social-icons a {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: var(--brand);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member .image{
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.team-member .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  background-color: rgba(231, 188, 114, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-member h5 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.team-member .social-icons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-member .social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+.team-member:hover .social-icons {
+  top: 50%;
+  opacity: 1;
+}
+
+.team-member:hover .overlay {
+  top: 0%;
+  opacity: 1;
+}
+
+
+
+/* footer */
+footer {
+  background: linear-gradient(rgba(99, 102, 11, 0.85), rgba(100, 21, 5, 0.85)), url(./img/silueta1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .footer-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+footer .navbar-brand {
+  color: #fff;
+}
+
+footer p {
+  color: #ecf0f4;
+}
+
+footer .social-icons a {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+
+input.form-control {
+  border-color: transparent;
+  height: 44px;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.04);;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--brand);
+}
+
+.tarjetas{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-img-top {
+  width: 17.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header para tablet */
+/* @media(max-width: 990px){
+} */
+
+ @media(max-width: 450px){
+  .imagenAbout{
+    margin-top: 30px;
+    width: 22rem;
+  } 
+} 
