@@ -89,7 +89,27 @@
   outline: none;
   transition: 0.5s ease-in-out;
   box-shadow: 0 5px 10px rgba(245, 237, 237, 0.5),inset
-  0 5px 5px rgba(25, 25, 24, 0.5); ;
+  0 5px 5px rgba(25, 25, 24, 0.5); 
+}
+
+.btn-Contacto{
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background:#173953;
+  border: 1px solid #62a3e0;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 5px 10px rgba(245, 237, 237, 0.5),inset
+  0 5px 5px rgba(25, 25, 24, 0.5); 
+}
+
+.btn-Contacto:hover{
+  transition: .0.3s ease-in-out;
+  background: #ccd51c;
 }
 
 .btn-header:hover {
@@ -320,32 +340,38 @@ footer .social-icons a {
   margin-right: 4px;
 }
 
-.loader {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-  z-index: 99999;
-  position: fixed;
-  left: 0;
-  right: 0;
-}
-
 
 input.form-control {
   border-color: transparent;
   height: 44px;
 }
 
+.contenedorLogoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 40px 40px 40px 10px;
+}
+
+.logoForm{
+  width: 100%;
+}
+
 .form-control {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.085);
   border-color: rgba(0, 0, 0, 0.04);;
 }
 
 .form-control:focus {
   box-shadow: none;
   border-color: var(--brand);
+}
+
+#buttonEmpleo {
+  opacity: 0;
 }
 
 .tarjetas{
