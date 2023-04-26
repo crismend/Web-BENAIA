@@ -370,7 +370,7 @@ input.form-control {
   border-color: var(--brand);
 }
 
-#buttonEmpleo {
+#mailSend {
   opacity: 0;
 }
 

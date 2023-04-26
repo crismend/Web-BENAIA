@@ -222,30 +222,30 @@
                   </div>
                   <div class="col-lg-6">
                     <label for="name" class="form-label">Nombres</label>
-                    <input name="name" id="name" type="text" class="form-control" aria-describedby="emailHelp">
+                    <input name="name" id="name" type="text" class="form-control">
                   </div>
                   <div class="col-lg-6">
                     <label for="lasname" class="form-label">Apellidos</label>
-                    <input name="lasname" id="lasname" type="text" class="form-control" aria-describedby="emailHelp">
+                    <input name="lasname" id="lasname" type="text" class="form-control">
                   </div>
                   <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input name="email" id="email" type="text" class="form-control" aria-describedby="emailHelp">
+                    <input name="email" id="email" type="email" class="form-control">
                   </div>
                   <div class="col-12">
                     <label for="message" class="form-label">Escribe un mensaje</label>
                     <textarea name="message" id="message" class="form-control" rows="4"></textarea>
                   </div>
-                  <div class="col-12">
-                    <input name="archivo" id="archivo" type="file" class="" aria-describedby="emailHelp">
+                  <div class="col-6">
+                    <input name="archivo" id="archivo" type="file">
                   </div>
-
 
                   <div class="col-12">
                     <button type="submit" class="btn btn-warning buttonSubmit">Enviar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </form>
+                <a href="mailto:servidorfiel42@gmail.com" id="mailSend">mail</a>
               </div>
             </div>
           </div>
@@ -254,6 +254,22 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const $formEmpleo = document.querySelector('#formEmpleo')
+    const $buttonMailto = document.querySelector('#mailSend')
+
+    $formEmpleo.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formdata = new FormData(event.currentTarget);
+
+      $buttonMailto.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} ${formdata.get('archivo')}
+      ${formdata.get('email')} &body= ${formdata.get('message')}`);
+
+      $buttonMailto.click();
+      $formEmpleo.reset();
+    })
+  </script>
 
 
   <script src="./main.js"></script>
