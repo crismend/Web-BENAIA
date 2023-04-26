@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg bg-light p-1 sticky-top">
     <div class="container">
       <a class=" navbar-brand" href="#">
-        <img src="../src/img/LOGO-BENAIA.png" alt="LOGOB ENAIA" class="img-logo">
+        <img src="img/LOGO-BENAIA.png" alt="LOGOB ENAIA" class="img-logo">
         <span class="company">INGENIERIA S.A.S</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -213,7 +213,8 @@
                 <img class="logoForm" src="img/LOGO-BENAIA.png" alt="">
               </div>
               <div class="col-lg-8">
-                <!-- FORMULARIO DE CONTACTO -->
+
+                <!--! FORMULARIO DE CONTACTO -->
                 <form action="" id="formEmpleo" class=" col-12 row g-3 form ">
                   <div>
                     <h1>Trabaja con nosotros</h1>
@@ -245,6 +246,7 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </form>
+
                 <a href="mailto:servidorfiel42@gmail.com" id="mailSend">mail</a>
               </div>
             </div>
@@ -263,7 +265,7 @@
       event.preventDefault();
       const formdata = new FormData(event.currentTarget);
 
-      $buttonMailto.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} ${formdata.get('archivo')}
+      $buttonMailto.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
       ${formdata.get('email')} &body= ${formdata.get('message')}`);
 
       $buttonMailto.click();
