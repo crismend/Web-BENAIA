@@ -195,6 +195,9 @@ margin: auto;
   margin-top: 24px;
   margin-bottom: 12px;
 }
+.servicioBox h4 {
+  color: rgba(105, 23, 7, 0.85) ;
+}
 
 /* swiper */
 .project {
@@ -370,7 +373,7 @@ input.form-control {
   border-color: var(--brand);
 }
 
-#mailSend {
+#formPrincipal, #mailSendP, #mailSendT {
   opacity: 0;
 }
 

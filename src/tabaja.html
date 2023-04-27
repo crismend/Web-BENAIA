@@ -92,7 +92,8 @@
         <div class="col-lg-6 col-sm-6">
           <div class="servicioBox">
             <img src="./img/tomar.png" alt="">
-            <h5>Quieres ser nuestro Proveedor?</h5>
+            <h4>Quieres ser uno de nuestros proveedores?</h4>
+            <h5>Requisitos</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque illum doloremque rem tempore quasi
               tempora voluptas perspiciatis, officiis illo ad deleniti omnis deserunt iusto, exercitationem molestias.
               Dolorem alias a facere!</p>
@@ -108,7 +109,8 @@
         <div class="col-lg-6 col-sm-6">
           <div class="servicioBox">
             <img src="./img/consultor.png" alt="">
-            <h5>Quieres ser parte del equipo de profecionales?</h5>
+            <h4>Quieres ser parte de nuestro equipo?</h4>
+            <h5>Requisitos</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque illum doloremque rem tempore quasi
               tempora voluptas perspiciatis, officiis illo ad deleniti omnis deserunt iusto, exercitationem molestias.
               Dolorem alias a facere!</p>
@@ -192,6 +194,7 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </form>
+                <a href="mailto:servidorfiel42@gmail.com" id="mailSendP">mail</a>
 
               </div>
             </div>
@@ -237,17 +240,16 @@
                     <label for="message" class="form-label">Escribe un mensaje</label>
                     <textarea name="message" id="message" class="form-control" rows="4"></textarea>
                   </div>
-                  <div class="col-6">
+                  <!-- <div class="col-6">
                     <input name="archivo" id="archivo" type="file">
-                  </div>
-
+                  </div> -->
                   <div class="col-12">
                     <button type="submit" class="btn btn-warning buttonSubmit">Enviar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </form>
 
-                <a href="mailto:servidorfiel42@gmail.com" id="mailSend">mail</a>
+                <a href="mailto:servidorfiel42@gmail.com" id="mailSendT">mail</a>
               </div>
             </div>
           </div>
@@ -258,17 +260,31 @@
   </div>
 
   <script>
+    const $formProveedor = document.querySelector('#formProveedor')
+    const $buttonMailtoP = document.querySelector('#mailSendP')
+
+    $formProveedor.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formdata = new FormData(event.currentTarget);
+      $buttonMailtoP.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
+      ${formdata.get('email')} &body= ${formdata.get('message')}`);
+      $buttonMailtoP.click();
+      $formProveedor.reset();
+    })
+  </script>
+
+
+  <!-- formulario de trabaja con nosotro -->
+  <script>
     const $formEmpleo = document.querySelector('#formEmpleo')
-    const $buttonMailto = document.querySelector('#mailSend')
+    const $buttonMailtoT = document.querySelector('#mailSendT')
 
     $formEmpleo.addEventListener('submit', (event) => {
       event.preventDefault();
       const formdata = new FormData(event.currentTarget);
-
-      $buttonMailto.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
+      $buttonMailtoT.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
       ${formdata.get('email')} &body= ${formdata.get('message')}`);
-
-      $buttonMailto.click();
+      $buttonMailtoT.click();
       $formEmpleo.reset();
     })
   </script>
