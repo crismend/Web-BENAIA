@@ -1,4 +1,4 @@
-// formulario principla
+
 const $form = document.querySelector('#form')
 const $buttonMailtoP = document.querySelector('#formPrincipal')
 
