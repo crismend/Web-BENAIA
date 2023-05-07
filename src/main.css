@@ -185,7 +185,7 @@ margin: auto;
   color: rgba(155, 34, 9, 0.85) ;
 }
 .intro p {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -280,7 +280,7 @@ margin: auto;
   position: absolute;
   left: 0;
   top: -10%;
-  background-color: rgba(231, 188, 114, 0.7);
+  background-color: rgba(149, 109, 38, 0.7);
   opacity: 0;
   transition: all 0.4s ease;
 }
