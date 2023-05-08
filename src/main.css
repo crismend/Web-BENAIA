@@ -405,6 +405,9 @@ input.form-control {
   margin: 0 auto;
 }
 
+.listasT li{
+list-style: none;
+}
 
 
 
