@@ -29,11 +29,12 @@
 }
 .texto-header {
   display: flex;
-	align-items: center;
+	align-items: start;
 	justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   height: 75vh;
 }
+
 
 
 .img-logo {
@@ -64,17 +65,8 @@
   font-size: 2rem ;
   color: transparent;
 	letter-spacing: -0.015em; 
-  background-image: linear-gradient(70deg, #eff0f6, #1a98dc, #b3f8dd);
+  background-image: linear-gradient(70deg, #eff0f6, #e5f0bb, #f8f2d0);
 	/* background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb); */
-   background-clip: text;
-   -webkit-background-clip: text;
-}
-#nivel2{
-  font-size: 2.2rem ;
-  color: transparent;
-	letter-spacing: -0.015em; 
-  background-image: linear-gradient(70deg, #6be5fe, #6be5fe);
-  	/* background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb); */
    background-clip: text;
    -webkit-background-clip: text;
 }
@@ -84,6 +76,13 @@
   font-family: 'Montserrat', sans-serif;
   color: #ede7cd;
   font-weight:700;
+}
+
+.botonheader{
+  display: flex;
+	align-items:center;
+	justify-content: center;
+  /* text-align: center; */
 }
 
 .btn-header {
@@ -416,7 +415,15 @@ input.form-control {
   } 
 
   .header {
-    height: 100vh;
+    height: 85vh;
+  }
+
+  .texto-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75vh;
   }
 
   #benai {
