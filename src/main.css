@@ -56,16 +56,25 @@
     0 1px 3px rgba(236, 230, 230, 0.2);
   color: transparent;
 	letter-spacing: -0.015em; 
-	background-image: linear-gradient(70deg, #eff0f6, #1a98dc, #b3f8dd);
+	background-image: linear-gradient(70deg, #eff0f6, #1a98dc, #b3b8f8);
    background-clip: text;
    -webkit-background-clip: text;
 }
 
 #nivel{
-  font-size: 2rem ;
+  font-size: 1.8rem ;
   color: transparent;
 	letter-spacing: -0.015em; 
-  background-image: linear-gradient(70deg, #eff0f6, #e5f0bb, #f8f2d0);
+  background-image: linear-gradient(70deg, #92a1f6, #67c2f4, #7eeac0);
+	/* background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb); */
+   background-clip: text;
+   -webkit-background-clip: text;
+}
+#nivel2{
+  font-size: 1.8rem ;
+  color: transparent;
+	letter-spacing: -0.015em; 
+  background-image: linear-gradient(70deg, #9dabf7, #7fccf9, #95caff);
 	/* background-image: linear-gradient(70deg, #57f792, #eae73a, #65f0bb); */
    background-clip: text;
    -webkit-background-clip: text;
