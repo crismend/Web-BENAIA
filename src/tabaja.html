@@ -83,9 +83,8 @@
       <div class="row">
         <div class="col-12 intro text-center">
           <h5>TRABAJA CON NOSOTROS</h5>
-          <h1>Si estás interesado, contáctenos</h1>
-          <p>Somos una empresa prestadora de servicios para el Desarrollo de proyectos de Arquitectura, obra Civil
-            precio.</p>
+          <h1>Si estás interesado, contáctanos</h1>
+          <p>Somos una empresa prestadora de servicios para el Desarrollo de proyectos de Arquitectura, obra Civil.</p>
         </div>
       </div>
       <div class="row">
@@ -105,7 +104,7 @@
               <li> Póliza Todo Riesgo</li>
               <li>Registro fotográfico</li>
               <li>Soat</li>
-              <li>Y cualquier otro que aplique particularmente para tu equipo</li>
+              <li>Y cualquier otro que aplique</li>
             </ul>
 
 
@@ -130,11 +129,12 @@
               <li>Examen psicosensometrico vigente</li>
               <li>Foto fondo blanco tamaño carné </li>
               <li>Hoja de vida</li>
-              <img src="./img/LOGO-BENAIA.png" style="width: 5rem; margin-top: 10px;" alt="">
+              <li>Y cualquier otro que aplique</li>
+              <!-- <img src="./img/LOGO-BENAIA.png" style="width: 5rem; margin-top: 10px;" alt=""> -->
             </ul>
 
             <div class="col text-white">
-              <a href="#" class="btn  btn-Contacto text-reset" data-bs-toggle="modal" data-bs-target="#EmpleoModal">
+              <a href="#" class="btn  btn-Contacto text-reset" data-bs-toggle="modal" data-bs-target="#EmpleoModal" style="margin-bottom: 0.8rem; margin-top: 0.8rem;">
                 <span>Click aquí </span> </a>
             </div>
           </div>
@@ -187,9 +187,9 @@
               </div>
               <div class="col-lg-8">
                 <!-- FORMULARIO DE CONTACTO -->
-                <form action="" id="formProveedor" class=" col-12 row g-3 form ">
+                <form action="https://formsubmit.co/servidorfiel42@gmail.com" method="POST" id="formProveedor" class=" col-12 row g-3 form ">
                   <div>
-                    <h1>Se nuestro proveedor</h1>
+                    <h1>Conviértete nuestro proveedor</h1>
                     <h4>Porfavor indícanos si tu interés es la venta o alquiler de equipo.</h4>
                     <h6>Nos pondremos en contacto lo antes posible.</p>
                     </h6>
@@ -204,10 +204,13 @@
                     <input name="lasname" id="lasname" type="text" class="form-control" aria-describedby="emailHelp"
                       required>
                   </div>
-                  <div class="col-12">
+                  <div class="col-6">
                     <label for="email" class="form-label">Email</label>
-                    <input name="email" id="email" type="text" class="form-control" aria-describedby="emailHelp"
-                      required>
+                    <input name="email" id="email" type="text" class="form-control" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="telefono" class="form-label">telefono</label>
+                    <input name="telefono" id="telefono" type="tel" class="form-control" required>
                   </div>
                   <div class="col-12">
                     <label for="message" class="form-label">Escribe un mensaje</label>
@@ -243,7 +246,7 @@
               <div class="col-lg-8">
 
                 <!--! FORMULARIO DE CONTACTO -->
-                <form action="" id="formEmpleo" class=" col-12 row g-3 form ">
+                <form action="https://formsubmit.co/servidorfiel42@gmail.com" method="POST" id="formEmpleo" class=" col-12 row g-3 form ">
                   <div>
                     <h1>Trabaja con nosotros</h1>
                     <p>No dudes en ponerte en contacto con nosotros,
@@ -257,9 +260,13 @@
                     <label for="lasname" class="form-label">Apellidos</label>
                     <input name="lasname" id="lasname" type="text" class="form-control" required>
                   </div>
-                  <div class="col-12">
+                  <div class="col-6">
                     <label for="email" class="form-label">Email</label>
                     <input name="email" id="email" type="email" class="form-control" required>
+                  </div>
+                  <div class="col-6">
+                    <label for="telefono" class="form-label">telefono</label>
+                    <input name="telefono" id="telefono" type="tel" class="form-control" required>
                   </div>
                   <div class="col-12">
                     <label for="message" class="form-label">Escribe un mensaje</label>
@@ -284,35 +291,22 @@
     </div>
   </div>
 
-  <script>
-    const $formProveedor = document.querySelector('#formProveedor')
-    const $buttonMailtoP = document.querySelector('#mailSendP')
-
-    $formProveedor.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const formdata = new FormData(event.currentTarget);
-      $buttonMailtoP.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
-      ${formdata.get('email')} &body= ${formdata.get('message')}`);
-      $buttonMailtoP.click();
-      $formProveedor.reset();
-    })
-  </script>
-
+  
 
   <!-- formulario de trabaja con nosotro -->
-  <script>
+  <!-- <script>
     const $formEmpleo = document.querySelector('#formEmpleo')
     const $buttonMailtoT = document.querySelector('#mailSendT')
 
     $formEmpleo.addEventListener('submit', (event) => {
       event.preventDefault();
       const formdata = new FormData(event.currentTarget);
-      $buttonMailtoT.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} 
+      $buttonMailtoT.setAttribute('href', `mailto:servidorfiel42@gmail.com?subject= ${formdata.get('name')} ${formdata.get('lasname')} ${formdata.get('telefono')}
       ${formdata.get('email')} &body= ${formdata.get('message')}`);
       $buttonMailtoT.click();
       $formEmpleo.reset();
     })
-  </script>
+  </script> -->
 
 
   <script src="./main.js"></script>
