@@ -431,8 +431,10 @@ list-style: none;
 
  @media(max-width: 450px){
   .imagenAbout{
+    display: flex;
+    align-items: center;
     margin: 0 auto;
-    width: 21rem;
+    width: 22.5rem;
   } 
 
   .header {
