@@ -432,7 +432,7 @@ list-style: none;
  @media(max-width: 450px){
   .imagenAbout{
     margin: 0 auto;
-    width: 24rem;
+    width: 21rem;
   } 
 
   .header {
