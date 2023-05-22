@@ -427,6 +427,18 @@ list-style: none;
 
 /* header para tablet */
  @media(max-width: 991px){
+  .header {
+    width: auto;
+    height: 100vh;
+  }
+  .texto-header {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+     text-align: center; 
+    height: 100vh;
+  }
+
   .imagenAbout{
     display: flex;
     align-items: center;
@@ -436,7 +448,7 @@ list-style: none;
 
   .descripciones{
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
   }
 
