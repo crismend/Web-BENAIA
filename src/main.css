@@ -426,10 +426,23 @@ list-style: none;
 
 
 /* header para tablet */
-/* @media(max-width: 990px){
-} */
+ @media(max-width: 991px){
+  .imagenAbout{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 30rem;
+  }
 
- @media(max-width: 450px){
+  .descripciones{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+} 
+
+ @media(max-width: 570px){
   .imagenAbout{
     display: flex;
     align-items: center;
@@ -438,7 +451,7 @@ list-style: none;
   } 
 
   .header {
-    height: 85vh;
+    height: 90vh;
   }
 
   .texto-header {
@@ -446,23 +459,23 @@ list-style: none;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 75vh;
+    height: 80vh;
   }
 
   #benai {
     font-family: 'Roboto Slab', serif;
    font-weight:bolder;
-   font-size: 2.5em;
+   font-size: 2.4em;
     padding: 0.8rem;
   }
 
   #nivel2{
-    font-size: 1.8rem ;
+    font-size: 1.5rem ;
     font-family: 'Roboto Slab', serif;
 
   }
   
   .parrafoHeader {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 } 
